@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/Narmeen.png" rel="icon"> 
+  <link href="assets/img/Capture.png" rel="icon"> 
 <!--   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
@@ -87,7 +87,24 @@
 <p style="text-align:center; margin-top: 10px;"><strong>Announcement : Due to the excellent response to our e-book, we will launch the 2nd edition with multifold improvements on 1st November. Pre-orders are starting soon, stay tuned!</strong></p>
 <p style="text-align:center; margin-top: 10px;"><strong>Announcement : More than 5000 readers checked our book in 1st week of launch</strong></p>
       <a href="about.html" class="btn-about">About Me</a>
-      <a href="contact.html" class="btn-about">Book a Free Session</a>
+<!--       <a href="contact.html" class="btn-about">Book a Free Session</a> -->
+      <!-- Button to trigger email sending -->
+<button id="sendEmailButton" class="btn-about">Send Email</button>
+
+<script>
+document.getElementById('sendEmailButton').addEventListener('click', function() {
+    // Change these values to your email settings
+    var recipient = 'recipient@example.com';
+    var subject = 'Subject of the email';
+    var body = 'Body of the email';
+
+    // Create mailto link
+    var mailtoLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+    // Open default email client
+    window.location.href = mailtoLink;
+});
+</script>
 <!--       <a href="https://narmeenshah.github.io/Book/Book - Narmeen.pdf" class="btn-about" target="_blank">Download E-Book (PDF)</a>
       <a href="https://narmeenshah.github.io/Book/Book - Narmeen.epub" class="btn-about" target="_blank">Download E-Book (Epub)</a>
       <a href="https://archive.org/details/building-inner-strength" class="btn-about" target="_blank">Listen Audiobook</a> -->
